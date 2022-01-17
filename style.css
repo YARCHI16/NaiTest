@@ -1,0 +1,123 @@
+
+html, body {
+	height: 100%;
+}
+
+
+.navbar{
+	height: 120px;
+	background: #fff;
+}
+
+/*header {
+	position: sticky;
+}*/
+
+body{
+	width: 100%;
+	height:250%; 
+	font-size: 16px;
+	min-width: 320px;
+	font-family: "Montserrat", sans-serif;
+}
+
+.navbar-brand img{
+	width: 315px;
+	height: 103px;
+}
+
+img {
+	max-width: 100%;	
+}
+
+li{
+	
+	margin: 0px 26px;
+	
+}
+
+li a{ 
+	font-size: 20px;
+	font-weight: 500;
+	margin-right: 15px;
+	text-decoration: none;
+	color: #000;
+
+}
+
+.btnf:link,
+.btnf:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 12px 20px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    position: absolute;
+}
+
+.btnf:hover {
+    transform: translateY(-3px);
+    color: #e3e3e3;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btnf:active {
+    transform: translateY(-1px);
+    color: #e3e3e3;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+    background-color: #80aad4;
+    color: #fff;
+}
+
+.btnf::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+    color: #fff;
+}
+
+.btn-white::after {
+    background-color: #80aad4;
+    color: #fff;
+}
+
+.btnf:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+    color: #fff;
+}
+
+.btn-animated {
+    animation: moveInBottom 5s ease-out;
+    animation-fill-mode: backwards;
+    color: #fff;
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.b{
+	height: 100%;
+	width: 100%;
+	background: #000;
+}
